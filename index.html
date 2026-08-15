@@ -270,7 +270,7 @@
         
         data.forEach(item => {
             let noteContent = formatText(item['NOTE + EXAMPLE']);
-            let noteHtml = noteContent ? `<div class="note-box"><strong class="text-warning-emphasis"><i class="bi bi-exclamation-triangle-fill me-1"></i>Lưu ý:</strong><br>${noteContent}</div>` : '';
+            let noteHtml = noteContent ? `<div class="note-box"><strong class="text-warning-emphasis"><i class="bi bi-exclamation-triangle-fill me-1"></i>Notes:</strong><br>${noteContent}</div>` : '';
             
             accordionContainer.innerHTML += `
                 <div class="accordion-item" id="item-${item.originalId}">
