@@ -108,7 +108,7 @@
             border-left: 4px solid var(--accent-color);
         }
 
-        /* Text ví dụ */
+        /* Text Example */
         .example-text {
             color: #38a169; /* Xanh lá dễ chịu */
             font-style: italic;
@@ -255,8 +255,8 @@
         if (!text) return '';
         let formattedText = text.replace(/\n/g, '<br>');
         // Thêm icon cho Example
-        formattedText = formattedText.replace(/(Example:)/g, '<br><i class="bi bi-chat-right-quote-fill me-2" style="color: var(--primary-color);"></i><b style="color: var(--primary-color);">Ví dụ:</b> <span class="example-text">');
-        formattedText = formattedText.replace(/(Ví dụ:.*?)(?=<br>|<i|$)/gs, '$1</span>');
+        formattedText = formattedText.replace(/(Example:)/g, '<br><i class="bi bi-chat-right-quote-fill me-2" style="color: var(--primary-color);"></i><b style="color: var(--primary-color);">Example:</b> <span class="example-text">');
+        formattedText = formattedText.replace(/(Example:.*?)(?=<br>|<i|$)/gs, '$1</span>');
         return formattedText;
     }
 
@@ -285,7 +285,7 @@
                                 <i class="bi bi-puzzle-fill me-2"></i>${item['STRUCTURE']}
                             </div>
                             <div class="mb-2">
-                                <strong class="text-dark"><i class="bi bi-info-square-fill me-2 text-primary"></i>Ý nghĩa & Cách dùng:</strong><br>
+                                <strong class="text-dark"><i class="bi bi-info-square-fill me-2 text-primary"></i>Mean:</strong><br>
                                 ${formatText(item['MEAN + EXAMPLE'])}
                             </div>
                             ${noteHtml}
